@@ -1,0 +1,11 @@
+.banner {
+    width: 720px;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 640px) {
+    .banner {
+        width: 100%
+    }
+}

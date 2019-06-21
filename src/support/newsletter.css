@@ -1,0 +1,54 @@
+.newsletterContainer{
+    background-color: #007bc1;
+    width: 620px;
+    color: white;
+    opacity: 0.9;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    position: fixed;
+    bottom: 0;
+    left:0;
+}
+
+.newsletterContainer p h2{
+    z-index: 1;
+}
+
+.closeBtn{
+    border: none;
+    float: right;
+    background-color: transparent;
+    color: white;
+
+}
+.btnCermati{
+    background-color: #ff8000;
+    width: 100%;
+    color: white;
+
+}
+.btnCermati:hover{
+    border: 1px solid white;
+}
+.textCermati{
+    width: 100%;
+}
+
+@media screen and (max-width: 640px) {
+    .newsletterContainer {
+        background-color: #007bc1;
+        width: 90%;
+        color: white;
+        opacity: 0.9;
+        padding-left: 10px;
+        padding-right: 10px;
+        position: fixed;
+        bottom: 0;
+        left:0;
+    }
+    .btnCermati{
+        margin-top:10px; 
+        width: 100%;
+    }
+}
