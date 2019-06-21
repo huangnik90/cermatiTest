@@ -5,13 +5,15 @@ import Cookies from 'universal-cookie';
 const cookies = new Cookies();
 
 class NewsLetter extends React.Component{
-    state={closeTab:true, cook :""}
+    state={closeTab:true, cook :"",animate:"newsletterContainer animated fadeInUp"}
 
     close = ()=>{
-        this.setState({closeTab:false})
+        this.setState({animate:"newsletterContainer animated slideOutDown"})
+        setInterval(()=>this.setState({closeTab:false}),1100)
         var date = new Date();
         date.setTime(date.getTime() + (600* 1000));
         cookies.set('news','abc',{path:'/',expires:date})
+        
         
     }
     componentDidMount(){
@@ -25,7 +27,7 @@ class NewsLetter extends React.Component{
             this.state.closeTab && this.state.cook===""? 
             <div>
 
-            <div className="newsletterContainer animated fadeInUp">
+            <div className={this.state.animate}>
             <input type="button" className="closeBtn" onClick={this.close} value="x"/>
             <h2>Get latest updates in web technologies</h2>
             <p>I write articles related to web technologies, such as design trends, development
