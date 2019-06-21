@@ -8,7 +8,7 @@ class NewsLetter extends React.Component{
     render(){
         return(
             this.state.closeTab?
-            <div className="newsletterContainer">
+            <div className="newsletterContainer animated fadeInUp delay-3s">
                 <input type="button" className="closeBtn" onClick={this.close} value="x"/>
                 <h2>Get latest updates in web technologies</h2>
                 <p>I write articles related to web technologies, such as design trends, development

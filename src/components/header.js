@@ -15,7 +15,7 @@ class Header extends React.Component{
                 </div>
                 <div className="row ">  
                 <div className="col-md-12 col-12" align="center">
-                    <div className="word2">
+                    <div className="word2 animated slow fadeInDown">
                     <h1>Hello! I'm Nikolas Wijaya</h1><br></br>
                     <h2>Consult, Design and Develop Website</h2>
                     <p>Have something great in mind? Feel free to contact me.<br></br> I'll help you make it happen.</p>
