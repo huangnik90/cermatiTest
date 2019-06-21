@@ -10,7 +10,7 @@ class NewsLetter extends React.Component{
     close = ()=>{
         this.setState({closeTab:false})
         var date = new Date();
-        date.setTime(date.getTime() + (5* 1000));
+        date.setTime(date.getTime() + (600* 1000));
         cookies.set('news','abc',{path:'/',expires:date})
         
     }
