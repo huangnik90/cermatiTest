@@ -1,10 +1,15 @@
 import React from 'react'
 import './../support/newsletter.css'
 class NewsLetter extends React.Component{
+    state={closeTab:true}
+    close = ()=>{
+        this.setState({closeTab:false})
+    }
     render(){
         return(
+            this.state.closeTab?
             <div className="newsletterContainer">
-                <input type="button" className="closeBtn" value="x"/>
+                <input type="button" className="closeBtn" onClick={this.close} value="x"/>
                 <h2>Get latest updates in web technologies</h2>
                 <p>I write articles related to web technologies, such as design trends, development
                 tools, UI/UX case studies and reviews, and more. Sign up to my newsletter to get
@@ -18,7 +23,7 @@ class NewsLetter extends React.Component{
                     <input type="button" className="btnCermati" value="Count Me In!"></input>
                 </div>
             </div>
-            </div>
+            </div>:null
         )
     }
 }
